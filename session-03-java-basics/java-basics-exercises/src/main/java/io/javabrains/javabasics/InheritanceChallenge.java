@@ -16,5 +16,18 @@ public class InheritanceChallenge {
 
     public static void main(String[] args) {
 
+        Animal lion = new Animal("Lion",50);
+        Animal dog   = new Dog("Pluto",20,"German Shepherd");
+        Animal cat = new Cat("Billy",10,5);
+        Animal horse = new Animal("Chetak",30);
+        Animal[] animals = {lion,dog,cat,horse};
+
+        for(Animal a : animals){
+            System.out.println(a.getName());
+            System.out.println(a.getAge());
+            a.makeSound();
+        }
+
+
     }
 }

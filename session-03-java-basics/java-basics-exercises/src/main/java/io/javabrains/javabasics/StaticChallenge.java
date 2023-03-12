@@ -13,6 +13,18 @@ Create a class `Rectangle` with the following attributes: `width`, `height`, and
 public class StaticChallenge {
 
     public static void main(String[] args) {
+        Rectangle R1  = new Rectangle(10,5);
+        Rectangle R2 = new Rectangle(4,7);
+        int area1 = R1.getArea();
+        int area2 = R2.getArea();
+        int perimeter1 = R1.getPerimeter();
+        int perimeter2 = R2.getPerimeter();
+        System.out.println("area1 = " + area1);
+        System.out.println("area2 = " + area2);
+        System.out.println("perimeter1 = " + perimeter1);
+        System.out.println("perimeter2 = " + perimeter2);
+
+        System.out.println(Rectangle.numOfRectangles);
 
     }
 }
